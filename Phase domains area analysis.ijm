@@ -329,7 +329,7 @@ for (dom=0; dom<domain_array.length; dom++){
 
 				run("Set Measurements...", "area area_fraction mean min centroid  redirect=None decimal=3");
 
-				run("Analyze Particles...", "size=min_detected-Infinity pixel  show=Masks display exclude clear  add in_situ");
+				run("Analyze Particles...", "size=min_detected-Infinity pixel  show=Masks display clear  add in_situ");
 				run("Invert LUT");
 				run(color_array[dom]);
 
@@ -356,7 +356,7 @@ for (dom=0; dom<domain_array.length; dom++){
 
 				run("Set Measurements...", "area area_fraction mean min centroid  redirect=None decimal=3");
 
-				run("Analyze Particles...", "size=min_detected-Infinity pixel  show=Masks display exclude clear include add in_situ");
+				run("Analyze Particles...", "size=min_detected-Infinity pixel  show=Masks display clear include add in_situ");
 				run("Invert LUT");
 				run(color_array[dom]);
 
@@ -397,7 +397,7 @@ for (dom=0; dom<domain_array.length; dom++){
 				setThreshold(129.0000, 255.0000);
 
 				run("Set Measurements...", "area mean min centroid  redirect=None decimal=3");
-				run("Analyze Particles...", "size=min_detected-Infinity pixel  show=Masks display exclude  clear summarize add in_situ");
+				run("Analyze Particles...", "size=min_detected-Infinity pixel  show=Masks display  clear summarize add in_situ");
 				run("Invert LUT");
 				run(color_array[dom]);
 
