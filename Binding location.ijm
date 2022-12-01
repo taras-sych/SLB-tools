@@ -3,16 +3,18 @@
 //----------------------------Input-----------------------------------
 
 time = 10; //time for analysis in minutes
-setBatchMode(true);
+setBatchMode(false);
 
 int_thick = 1; //interface thickness in micrometers
 //---------------------------------------------------------------------
 
 flag = 0;
 Stack.getDimensions(width, height, channels, slices, frames);
+
+
 getPixelSize(unit, pixelWidth, pixelHeight); 
 T = Stack.getFrameInterval();
-frames = (time* 60 -(time * 60) % T )/T + 1;
+//frames = (time* 60 -(time * 60) % T )/T + 1;
 
 dir = getDirectory("image");
 
@@ -76,6 +78,8 @@ print(file," ");
 print(file, "Line width:" + "\t" + linewidth);
 print(file," ");	
 print (file, "Time, min" + "\t" + "Total" + "\t" + "Interface" + "\t" + "Ld" + "\t" + "Lo" + "\t\t" + "Area Interface" + "\t" + "Area Ld" + "\t" + "Area Lo" + "\t\t" + "Interface norm" + "\t" + "Ld norm" + "\t" + "Lo norm");
+
+
 
 for (index = 1; index < frames+1; index ++){
 
