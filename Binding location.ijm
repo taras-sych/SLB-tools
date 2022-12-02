@@ -5,7 +5,7 @@
 time = 10; //time for analysis in minutes
 setBatchMode(false);
 
-int_thick = 0.5; //interface thickness in micrometers
+int_thick = 1; //interface thickness in micrometers
 //---------------------------------------------------------------------
 
 flag = 0;
